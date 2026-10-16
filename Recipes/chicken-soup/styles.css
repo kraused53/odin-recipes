@@ -1,0 +1,102 @@
+*, *::before, *::after {
+  box-sizing: border-box; /* Ensures padding doesn't affect overall element width */
+  margin: 0;
+  padding: 0;
+}
+
+header, footer {
+    min-height: 5vh;
+    background-color: var(--accent-dark);
+    color: var(--accent-light);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+    
+main {
+    display: flex;
+    flex-direction: column;
+
+    flex-grow: 1;
+    background-color: var(--primary-color-dark);
+
+    align-items: center;
+    justify-content: space-around;
+    gap: 2rem;
+}
+
+#page-contents {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+
+#description-contents {
+    background-color: var(--primary-color);
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 2rem;
+
+    width: 50rem;
+    padding: var(--card-padding);
+
+    border: 1rem ridge var(--primary-color);
+    box-shadow: 0.5rem 0.5rem 20px var(--accent-dark);
+}
+
+#description {
+    font-size: 1rem;
+    text-align: justify;
+    text-justify: auto;
+    color: var(--primary-text);
+
+    width: 25rem;
+}
+
+#description::first-letter {
+    font-size: 8rem;
+    color: var(--accent-light);
+}
+
+#recipe-contents {
+    background-color: var(--primary-color);
+
+    display: flex;
+    
+    color: var(--primary-text);
+
+    gap: 2rem;
+
+    width: 50rem;
+    padding: var(--card-padding);
+
+    border: 1rem ridge var(--primary-color);
+    box-shadow: 0.5rem 0.5rem 20px var(--accent-dark);
+
+    align-items: flex-start;
+    font-size: 0.8rem;
+}
+
+#ingredients > h2,
+#directions > h2 {
+    text-align: center;
+    text-decoration: underline;
+    margin-bottom: 1rem;
+    font-size: 2rem;
+    color: var(--accent-light);
+}
+
+#ingredients > ul {
+    margin: 1rem 0;
+}
+
+h3 {
+    
+    font-size: 1.25rem;
+}

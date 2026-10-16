@@ -4,19 +4,38 @@
 <head>
   <meta charset="UTF-8">
   <title>Dan's Recipes | Home</title>
+  <link rel="stylesheet" href="./styles.css">
+  <link rel="stylesheet" href="./universal.css">
 </head>
 
 <body>
-  <h1>Daniel's Favorite Recipes</h1>
-
-  <p>Here are some of my favorite recipes. I hope you enjoy them as much as I do!</p>
-
-  <ul>
-    <li><a href="Recipes/cheddar-bread.html">Cheddar Jalapeño Bread</a></li>
-    <li><a href="Recipes/apple-butter.html">Apple Butter</a></li>
-    <li><a href="Recipes/chicken-soup.html">Chicken Soup</a></li>
-  </ul>
-
+  
+  <div id="page-contents">
+    <header>
+      <h1>
+        Here are some of my favorite recipes!
+      </h1>
+    </header>
+    <main>
+      <a class="recipe-card" href="./Recipes/apple-butter/apple-butter.html">
+        <img src="./Images/apple-butter.jpg">
+        <p>Apple Butter</p>
+      </a>
+      <a class="recipe-card" href="./Recipes/chicken-soup/chicken-soup.html">
+        <img src="./Images/chicken-soup.jpeg">
+        <p>Chicken Soup</p>
+      </a>
+      <a class="recipe-card" href="./Recipes/cheddar-bread/cheddar-bread.html">
+        <img src="./Images/jalapeno-cheddar-bread.webp">
+        <p>Jalapeno Cheddar Bread</p>
+      </a>
+    </main>
+    <footer>
+      <p>
+        Thank you for visiting my recipe page
+      </p>
+    </footer>
+  </div>
 </body>
 
 </html>

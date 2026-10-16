@@ -1,0 +1,20 @@
+*, *::before, *::after {
+  box-sizing: border-box; /* Ensures padding doesn't affect overall element width */
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+    --primary-color: #364156;
+    --primary-color-dark: #212d40;
+    --primary-text: linen;
+    --accent-light: #d66853;
+    --accent-dark: #11151c;
+
+    --card-padding: 2rem;
+}
+
+img {
+  width: 15rem;
+  border-radius: 5rem;
+}

@@ -1,0 +1,58 @@
+header, footer {
+    min-height: 5vh;
+    background-color: var(--accent-dark);
+    color: var(--accent-light);
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+main {
+    flex-grow: 1;
+    background-color: var(--primary-color-dark);
+
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    gap: 2rem;
+}
+
+#page-contents {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+.recipe-card {
+    border: 5px double var(--primary-color-dark);
+    background-color: var(--primary-color);
+
+    height: 30rem;
+    width: 20rem;
+    padding: var(--card-padding);
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 2rem;
+    border-radius: 5rem;
+}
+
+.recipe-card > p {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1.25rem;
+    color: var(--primary-text);
+    text-align: center;
+}
+
+.recipe-card:hover {
+    zoom: 1.125;
+    
+    border: 5px double var(--accent-light);
+    box-shadow: 0 0 50px var(--accent-light);
+}
+
+a {
+    text-decoration: none;
+}
